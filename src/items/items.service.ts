@@ -11,6 +11,10 @@ export class ItemsService {
     return this.items;
   }
 
+  findById(id: string): Item {
+    return this.items.find((item) => item.id === id);
+  }
+
   // 配列にpush
   create(item: Item): Item {
     this.items.push(item);
