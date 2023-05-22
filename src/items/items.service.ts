@@ -6,8 +6,9 @@ export class ItemsService {
   // Item型の配列を作成
   private items: Item[] = [];
 
-  findAll() {
-    return 'This is ItemsService';
+  // 配列を返却
+  findAll(): Item[] {
+    return this.items;
   }
 
   // 配列にpush
